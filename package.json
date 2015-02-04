@@ -1,0 +1,9 @@
+{
+    "name": "SASCII",
+    "main": "./views/index.html",
+    "window": {
+        "toolbar": true,
+        "frame": true,
+        "toolbar": false
+    }
+}

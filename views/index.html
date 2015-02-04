@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>SASCII</title>
+
+  <!-- CSS  -->
+  <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue" role="navigation">
+    <div class="container">
+      <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo goBack">SASCII</a>
+        <ul id="nav-mobile" class="right side-nav">
+          <li><a href="howto.html">How to?</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      </div>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="divInput">
+    <div class="container">
+      <br>
+      <div class="row center">
+        <input type="text" placeholder="Type text here" id="txtInput" class="invalid" autofocus>
+      </div>
+      <div class="row">
+        <select id="selectFont">
+          <option value="standard" selected>Standard font</option>
+          <option value="3-d">3-d</option>
+          <option value="binary">Binary</option>
+          <option value="lean">Lean</option>
+          <option value="smscript">Smscript</option>
+          <option value="tsalagi">Tsalagi</option>
+          <option value="weird">Weird</option>
+        </select>
+      </div>
+      <div class="row center">
+        <button type="button" id="btnGenerate"
+          class="btn-large waves-effect waves-light btn-large orange">
+          Generate
+        </button>
+      </div>
+      <br><br>
+    </div>
+  </div>
+
+  <div class="section no-pad-bot" id="divOutput">
+    <div class="container">
+      <br>
+      <div class="row center">
+        <pre id="txtOutput"></pre>
+      </div>
+      <div class="row center">
+        <button type="button" id="btnCopy"
+          class="btn-large waves-effect waves-light orange">
+          Copy to Clipboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.min.js"></script>
+  <script src="../js/figlet.js"></script>
+  <script src="../js/jquery.figlet.js"></script>
+  <script src="../js/init.js"></script>
+</body>
+</html>
